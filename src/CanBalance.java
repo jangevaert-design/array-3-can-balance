@@ -7,11 +7,12 @@ public class CanBalance {
    */
 
   public static void main(String[] args) {
+    CanBalance yesCanBalance = new CanBalance();
     int[] nums = {1, 1, 1, 2, 1};
-    System.out.printf("\nthe int array %s returns: " + canBalance(nums) + "\n", Arrays.toString(nums));
+    System.out.printf("\nthe int array %s returns: " + yesCanBalance.canBalance(nums) + "\n", Arrays.toString(nums));
   }
 
-  public static boolean canBalance(int[] nums) {
+  public boolean canBalance(int[] nums) {
     int left = 0;
 
     for (int i = 0; i < nums.length; i++) {
